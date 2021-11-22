@@ -1,0 +1,145 @@
+/* === FONTS === */
+@import url("http://fonts.googleapis.com/css?family=Oswald:400,300,700");
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,300,700");
+
+/* === GLOBAL === */
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+section{
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+h1, h2, h3 {
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+input[type=text], input[type=email]{
+    height: 48px;
+    border-radius: 24px;
+    padding-left: 1.2rem;
+}
+
+textarea{
+    border-radius: 24px !important;
+    padding-left: 1.2rem !important;
+    padding-top: 0.8rem !important;
+}
+
+.btn{
+    height: 48px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* === MENU === */
+header{
+    margin-top: 2rem;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+#header{
+    transition: top 0.3s;
+}
+
+.nav-top-bar{
+    color: #fff;
+    margin-bottom: 1.4rem;
+}
+
+.nav-top-bar .sm-icons{
+    float: right;
+    padding: 0;
+}
+
+.sm-icons .col{
+    padding-left: 2rem;
+    padding-right: 0;
+}
+
+.top-bar-mail{
+    padding-left: 1.2rem;
+}
+
+.top-bar-mail a{
+    padding-left: 0.8rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-menu{
+    background-color: #fff !important;
+    box-shadow: 0px 12px 48px rgba(0,0,0,0.2);
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.main-menu .nav-link{
+    margin-right: 1.2rem;
+}
+
+.site-logo{
+    margin-left: 1.2rem;
+}
+
+.site-logo span{
+    padding-left: 0.8rem;
+}
+
+.menu-button{
+    border-style: none;
+    margin-right: 0.6rem;
+    width: 48px;
+    padding-left: 0.6rem;
+}
+
+#navbarScroll{
+    background-color: #fff;
+    padding-left: 1.2rem;
+}
+
+/* === SLIDER === */
+#slider{
+    height: 100vh;
+}
+
+#slider .big-slider{
+    height: 100% !important;
+}
+
+#slider img{
+    object-fit: cover;
+}
+
+/* === FOOTER === */
+.footer{
+    padding-top: 4rem;
+    background-color:gray;
+}
+
+.footer .sm-icons{
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 400px;
+}
+
+.footer .sm-icons .col{
+    padding-left: 0;
+}
+
+.bottom-bar{
+    padding-top: 2rem;
+    text-align: center;
+    padding-bottom: 4rem;
+}
