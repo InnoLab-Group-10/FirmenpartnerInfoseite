@@ -1,6 +1,5 @@
 import React from 'react';
 import {Container, Row, Col, Button} from 'react-bootstrap';
-import BottomBar from '../components/BottomBar.js';
 import SocialMediaBar from '../components/SocialMediaBar.js';
 import Image from 'react-bootstrap/Image';
 
