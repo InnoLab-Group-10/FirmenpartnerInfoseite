@@ -5,6 +5,11 @@
 /* === GLOBAL === */
 body{
     font-family: "Roboto", sans-serif;
+    background-color:#343a40;
+}
+
+#bootstrap-override{
+    background-color: #fff;
 }
 
 section{
@@ -21,8 +26,12 @@ section .container{
     transform: skewY(0deg);
 }
 
+section:nth-of-type(odd){
+    background-color: #fff;
+}
+
 section:nth-of-type(even){
-    background-color: rgba(0,0,0,.03);
+    background-color: #f8f9fa;
 }
 
 h1, h2, h3 {
@@ -124,7 +133,7 @@ header{
 /* === SLIDER === */
 #bootstrap-override #slider{
     height: 100vh;
-    z-index: -1;
+    z-index: 0;
     position: relative;
 }
 
@@ -215,9 +224,9 @@ header{
 
 
 /* === FOOTER === */
-
 .footer{
-    padding-top: 8rem;
+    padding-top: 10rem;
+    padding-bottom: 4rem;
     background-color:#343a40;
     color: #fff;
     transform: skewY(-8deg);
@@ -228,7 +237,7 @@ header{
 }
 
 .footer .sm-icons{
-    margin-top: 2rem;
+    margin-top: 4rem;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -240,13 +249,14 @@ header{
 }
 
 .sm-icons{
-    padding-top: 1rem;
+    padding-top: 3rem;
 }
 
 .bottom-bar{
-    margin-top: -80px;
-    height: 200px;
-    padding-top: 8rem;
+    position: relative;
+    z-index: 10;
+    margin-top: -12rem;
+    padding-top: 3rem;
     text-align: center;
     color: #fff;
     background-color:#343a40;
