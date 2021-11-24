@@ -10,6 +10,7 @@ import Testimonials from './blocks/Testimonials.js';
 import Partner from './blocks/Partner.js';
 import Contact from './blocks/Contact.js';
 import Footer from './blocks/Footer.js';
+import BottomBar from './components/BottomBar.js';
 
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
@@ -45,6 +46,7 @@ const App = () => {
 			<Contact/>
 		</section>
 		<Footer/>
+		<BottomBar></BottomBar>
 	</div>;
 };
 

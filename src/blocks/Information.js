@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Row, Col, Button} from 'react-bootstrap';
+import {Container, Row, Col, Image} from 'react-bootstrap';
 
 const Information = () => {
 	return <div>
@@ -13,7 +13,7 @@ const Information = () => {
                     </p>
                 </Col>
                 <Col>
-                    <Button>Irgendwas</Button>
+                    <Image src="holder.js/100px250" fluid />
                 </Col>
             </Row>
         </Container>

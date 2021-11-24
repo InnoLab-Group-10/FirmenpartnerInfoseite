@@ -8,14 +8,28 @@ body{
 }
 
 section{
-    margin-top: 8rem;
-    margin-bottom: 8rem;
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+    transform: skewY(-8deg);
+}
+
+section .container{
+    transform: skewY(8deg);
+}
+
+#contact .contact-information{
+    transform: skewY(0deg);
+}
+
+section:nth-of-type(even){
+    background-color: rgba(0,0,0,.03);
 }
 
 h1, h2, h3 {
     font-family: "Oswald", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
+    margin-bottom: 1rem;
 }
 
 input[type=text], input[type=email]{
@@ -108,8 +122,10 @@ header{
 }
 
 /* === SLIDER === */
-#slider{
+#bootstrap-override #slider{
     height: 100vh;
+    z-index: -1;
+    position: relative;
 }
 
 #slider .big-slider{
@@ -120,10 +136,95 @@ header{
     object-fit: cover;
 }
 
+.main-slide-text{
+    margin-bottom: 16rem;
+}
+
+#slider .carousel-indicators{
+    margin-bottom: 6rem;
+}
+
+/* === DUALINFOS === */
+#dual .accordion,
+#dual .card-header,
+#dual .card-body,
+#dual .card{
+    border: none;
+    background-color: rgba(0,0,0,0);
+}
+
+#dual{
+    text-align: center;
+    background-color: #fff;
+}
+
+.accordion-menu{
+    margin-top: 2rem;;
+    text-align: center;
+}
+
+.accordion-menu .btn{
+    width: 100%;
+}
+
+/* === TESTIMONIALS === */
+#bootstrap-override #testimonials img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12rem;
+}
+
+#testimonials h3,
+#testimonials p,
+#testimonials h4{
+    color: #212529;
+}
+
+#bootstrap-override #testimonials .carousel-indicators button{
+    background-color: #212529;
+}
+
+/* === PARTNER === */
+#bootstrap-override #partner img{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+#partner .row{
+    margin-bottom: 3rem;
+}
+
+#partner{
+    text-align: center;
+}
+
+/* === CONTANT === */
+.contact-information .row{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.contact-information svg{
+    width: 32px;
+    height: 32px;
+}
+
+
 /* === FOOTER === */
+
 .footer{
-    padding-top: 4rem;
-    background-color:gray;
+    padding-top: 8rem;
+    background-color:#343a40;
+    color: #fff;
+    transform: skewY(-8deg);
+}
+
+.footer .container{
+    transform: skewY(8deg);
 }
 
 .footer .sm-icons{
@@ -138,8 +239,25 @@ header{
     padding-left: 0;
 }
 
+.sm-icons{
+    padding-top: 1rem;
+}
+
 .bottom-bar{
-    padding-top: 2rem;
+    margin-top: -80px;
+    height: 200px;
+    padding-top: 8rem;
     text-align: center;
-    padding-bottom: 4rem;
+    color: #fff;
+    background-color:#343a40;
+    margin-bottom: 0;
+}
+
+.footer h5, .footer ul, .footer p, .footer .btn{
+    margin-left: 2rem;
+}
+
+.footer .btn{
+    height: auto;
+    min-height: 48px;
 }

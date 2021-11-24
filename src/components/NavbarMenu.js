@@ -23,7 +23,7 @@ const NavbarMenu = () => {
               <Nav.Link href="#">Home</Nav.Link>
               <Nav.Link href="#dual">Link 1</Nav.Link>
               <Nav.Link href="#testimonials">Link 2</Nav.Link>
-              <Nav.Link href="#infos">Link 3</Nav.Link>
+              <Nav.Link href="#contact">Link 3</Nav.Link>
             </Nav>
           </Navbar.Collapse>
       </Navbar>

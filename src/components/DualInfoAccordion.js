@@ -1,7 +1,7 @@
 import React from 'react';
-import {Accordion, Card} from 'react-bootstrap';
+import {Accordion, Card, Col, Button} from 'react-bootstrap';
 import { useAccordionButton } from 'react-bootstrap/AccordionButton';
-
+import {MdKeyboardArrowDown} from 'react-icons/md'
 
 function CustomToggle({ children, eventKey }) {
     const decoratedOnClick = useAccordionButton(eventKey, () =>
@@ -9,23 +9,28 @@ function CustomToggle({ children, eventKey }) {
     );
   
     return (
-      <button
+      <Button
+        className="btn btn-light"
         type="button"
-        style={{ backgroundColor: 'pink' }}
         onClick={decoratedOnClick}
       >
         {children}
-      </button>
+      </Button>
     );
   }
 
 
 const DualInfoAccordion = () => {
 	return (
-        <Accordion defaultActiveKey="0">
+        <Accordion className="accordion-menu" defaultActiveKey="0">
           <Card>
             <Card.Header>
-              <CustomToggle eventKey="0">Click me!</CustomToggle>
+              <Col>
+                <h4>Thema 1</h4>
+              </Col>
+              <CustomToggle className="accordion-buttom" eventKey="0">
+                <MdKeyboardArrowDown/>
+              </CustomToggle>
             </Card.Header>
             <Accordion.Collapse eventKey="0">
               <Card.Body>Infos über die Berufspraxisphase</Card.Body>
@@ -33,7 +38,12 @@ const DualInfoAccordion = () => {
           </Card>
           <Card>
             <Card.Header>
-              <CustomToggle eventKey="1">Click me!</CustomToggle>
+              <Col>
+                <h4>Thema 2</h4>
+              </Col>
+              <CustomToggle className="accordion-buttom" eventKey="1">
+                <MdKeyboardArrowDown/>
+              </CustomToggle>
             </Card.Header>
             <Accordion.Collapse eventKey="1">
               <Card.Body>WAs kann man von einem FHStudenten erwarten</Card.Body>

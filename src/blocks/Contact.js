@@ -17,24 +17,30 @@ const Contact = () => {
                 <Col>
                     <h1>Our Location</h1>
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered .</p>
-                    <Container>
+                    <Container className="contact-information">
                         <Row>
-                            <Col>
-                                <LocationIcon></LocationIcon> 
+                            <Col md={2}>
+                                <LocationIcon/> 
                             </Col>
-                            <Col>Straße 00, 0000 Ort</Col>
+                            <Col>
+                                <h4>Straße 00, 0000 Ort</h4>
+                            </Col>
                         </Row>
                         <Row>
-                            <Col>
-                                <PhoneIcon></PhoneIcon>
+                            <Col md={2}>
+                                <PhoneIcon/>
                             </Col>
-                            <Col>+43 (0) 000 000 00 00</Col>
+                            <Col>
+                                <h4>+43 (0) 000 000 00 00</h4>
+                            </Col>
                         </Row>
                         <Row>
-                            <Col>
-                                <MailIcon></MailIcon>
+                            <Col  md={2}>
+                                <MailIcon/>
                             </Col>
-                            <Col>name@example.com</Col>
+                            <Col>
+                                <h4>name@example.com</h4>
+                            </Col>
                         </Row>
                     </Container>
                 </Col>

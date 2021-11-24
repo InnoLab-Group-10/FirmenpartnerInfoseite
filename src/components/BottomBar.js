@@ -6,7 +6,7 @@ const BottomBar = () => {
         <Container>
             <Row>
                 <Col>
-                    © 2020 Company Name. Made With Love By Us
+                    © 2020 Company Name. Made With Love By Gruppe 10
                 </Col>
             </Row>
         </Container>
