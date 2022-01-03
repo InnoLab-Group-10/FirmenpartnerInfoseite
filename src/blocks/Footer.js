@@ -8,8 +8,8 @@ import logo from "../media/fh_technikum_wien_logo_4c_2020.svg";
 const Footer = () => {
 	return <div className="footer">
         <Container>
-            <Row>
-                <Col className="footer-column" lg={4}>
+            <Row className="justify-content-center">
+                <Col className="footer-column" md={6} lg={4}>
                     <Image src={logo} fluid />
                 </Col>
                 <Col className="footer-column" lg={4}>

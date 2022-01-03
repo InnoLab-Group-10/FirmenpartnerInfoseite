@@ -8,10 +8,9 @@ const DualInfos = () => {
             <Row>
                 <Col>
                     <h1>Das duale Studium</h1>
-                    <h2>Informatik</h2>
-                    <p>
+                    <h3>
                         Die erste Informatik Grundausbildung in Österreich, die als dualer Studiengang ageboten wird
-                    </p>
+                    </h3>
                 </Col>
             </Row>
             <Row>

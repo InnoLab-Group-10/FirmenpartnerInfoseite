@@ -27,6 +27,7 @@ const DualInfoAccordion = () => {
             <Card.Header>
               <Col>
                 <h4>Das duale Studium</h4>
+                <p>Die Idee ist es, zukünftige Mitarbeiter schon früh aufzubauen und je nach Stärken gezielt einzusetzen.</p>
               </Col>
               <CustomToggle className="accordion-button" eventKey="0">
                 <MdKeyboardArrowDown/>
@@ -148,6 +149,9 @@ const DualInfoAccordion = () => {
             <Card.Header>
               <Col>
                 <h4>Bewerbungsprozess bei den Partnerunternehmen</h4>
+                <p>
+                  Die Studierenden haben durch den Praxisbezug einen deutlichen Mehrwert.
+                </p>
               </Col>
               <CustomToggle className="accordion-button" eventKey="1">
                 <MdKeyboardArrowDown/>
@@ -170,6 +174,9 @@ const DualInfoAccordion = () => {
             <Card.Header>
               <Col>
                 <h4>Partnerunternehmen</h4>
+                <p>
+                  Die Unternehmer müssen IT bzw. IKT tätig sein und dort Studierende beschäftigen. Die Kommunikation zwischen Unternehmen und FH ist besonders wichtig. Darum finden jedes Semester Netzwerktreffen statt.
+                </p>
               </Col>
               <CustomToggle className="accordion-button" eventKey="2">
                 <MdKeyboardArrowDown/>

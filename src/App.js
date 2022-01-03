@@ -33,14 +33,14 @@ const App = () => {
 		<section id="dual">
 			<DualInfos/>
 		</section>
-		<section id="testimonials">
-			<Testimonials/>
-		</section>
 		<section id="info">
 			<Information/>
 		</section>
 		<section id="partner">
 			<Partner/>
+		</section>
+		<section id="testimonials">
+			<Testimonials/>
 		</section>
 		<section id="contact">
 			<Contact/>
