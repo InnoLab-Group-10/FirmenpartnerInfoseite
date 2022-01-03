@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Row, Col} from 'react-bootstrap';
+import {Container, Row, Col, Button} from 'react-bootstrap';
 
 import FacebookIcon from '../icons/FacebookIcon.js';
 import TwitterIcon from '../icons/TwitterIcon.js';
@@ -12,20 +12,30 @@ const SocialMediaBar = () => {
         <Container>
             <Row className="sm-icons">
                 <Col>
-                    <FacebookIcon></FacebookIcon> 
+                    <Button variant="link" href="https://www.facebook.com/fhtechnikumwien" target="_blank">
+                        <FacebookIcon></FacebookIcon>
+                    </Button> 
                 </Col>
                 <Col>
-                    <TwitterIcon></TwitterIcon> 
+                    <Button variant="link" href="https://twitter.com/fhtechnikumwien" target="_blank">
+                        <TwitterIcon></TwitterIcon>
+                    </Button>
                 </Col>
                 <Col>
-                    <InstagramIcon></InstagramIcon>
+                    <Button variant="link" href="https://www.instagram.com/technikum_wien/" target="_blank">
+                        <InstagramIcon></InstagramIcon>
+                    </Button>
                 </Col>
                 <Col>
-                    <YoutubeIcon></YoutubeIcon> 
+                    <Button variant="link" href="https://www.youtube.com/user/FHTechnikumWien" target="_blank">
+                        <YoutubeIcon></YoutubeIcon>
+                    </Button>
                 </Col>
                 <Col>
-                    <WebIcon></WebIcon>
-                </Col >
+                    <Button variant="link" href="https://www.technikum-wien.at/duales-studium-bachelor-studiengang-informatik/" target="_blank">
+                        <WebIcon></WebIcon>
+                    </Button>
+                </Col>
             </Row>
         </Container>
     </div>;

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Row, Col} from 'react-bootstrap';
+import {Container, Row, Col, Button} from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
 
 const Partner = () => {
@@ -8,9 +8,9 @@ const Partner = () => {
             <Row>
                 <Col>
                     <h1>Unsere Partner</h1>
-                    <h3>Lorem ipsum dolor</h3>
+                    <h3>Auswahl unserer Kooperationspartner</h3>
                     <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        Werden Sie Firmenpartner der FH Technikum Wien und präsentieren Sie sich bei unseren Studierenden und AbsolventInnen als attraktives Unternehmen.
                     </p>
                 </Col>
             </Row>
@@ -79,6 +79,9 @@ const Partner = () => {
                 <Col>
                     <Image src="holder.js/60x60" fluid />
                 </Col>
+            </Row>
+            <Row>
+                <Button className="partner-button" variant="secondary" size="lg" href="https://www.technikum-wien.at/unternehmenspartner-ihre-kooperationsmoeglichkeiten-im-ueberblick/" target="_blank">Mehr Infos</Button>
             </Row>
         </Container>
 

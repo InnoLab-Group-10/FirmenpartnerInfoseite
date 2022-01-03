@@ -17,7 +17,7 @@ const ContactForm = () => {
                     <Form.Control as="textarea" rows={3} placeholder="Ihre Nachricht"/>
                 </Form.Group>
                 <div className="d-grid gap-2">
-                    <Button variant="primary" type="submit">
+                    <Button className="contact-button" variant="secondary" type="submit">
                         Absenden
                     </Button>                
                 </div>
