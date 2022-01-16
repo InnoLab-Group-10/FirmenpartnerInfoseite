@@ -8,38 +8,38 @@ import MailIcon from '../icons/MailIcon';
 
 const Contact = () => {
 	return <div>
-        <Container>
+        <Container className="contact-box">
             <Row>
-                <Col>
-                    <h1>Get in Touch</h1>
+                <Col lg>
+                    <h1>Was können wir für Sie tun?</h1>
                     <ContactForm></ContactForm>
                 </Col>
                 <Col>
-                    <h1>Our Location</h1>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered .</p>
+                    <h1>Besuchen Sie uns mal</h1>
+                    <p>Öffnungszeiten: Mo-Fr 7:30 - 19:30 Uhr, Sa 7:30-13:00 Uhr<br/>Bei Interesse an einer Kooperation nutzen Sie das Kontaktformular oder wenden sich direkt an den Firmenkoordinator.</p>
                     <Container className="contact-information">
-                        <Row>
-                            <Col md={2}>
+                        <Row className="justify-content-md-center">
+                            <Col xs={2}>
                                 <LocationIcon/> 
                             </Col>
-                            <Col>
-                                <h4>Straße 00, 0000 Ort</h4>
+                            <Col xs={6}>
+                                <h4>FH-Prof. DI Helmut Gollner</h4>
                             </Col>
                         </Row>
-                        <Row>
-                            <Col md={2}>
+                        <Row className="justify-content-md-center">
+                            <Col xs={2}>
                                 <PhoneIcon/>
                             </Col>
-                            <Col>
-                                <h4>+43 (0) 000 000 00 00</h4>
+                            <Col xs={6}>
+                                <h4>+43 (0) 1 333 40 77-2524</h4>
                             </Col>
                         </Row>
-                        <Row>
-                            <Col  md={2}>
+                        <Row className="justify-content-md-center">
+                            <Col xs={2}>
                                 <MailIcon/>
                             </Col>
-                            <Col>
-                                <h4>name@example.com</h4>
+                            <Col xs={6}>
+                                <h4>helmut.gollner@technikum-wien.at</h4>
                             </Col>
                         </Row>
                     </Container>

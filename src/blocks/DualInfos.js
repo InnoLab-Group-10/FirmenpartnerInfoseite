@@ -7,11 +7,10 @@ const DualInfos = () => {
         <Container>
             <Row>
                 <Col>
-                    <h1>Überschrift</h1>
-                    <h2>Unterüberschrift</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                    </p>
+                    <h1>Das duale Studium</h1>
+                    <h3>
+                        Die erste Informatik Grundausbildung in Österreich, die als dualer Studiengang ageboten wird
+                    </h3>
                 </Col>
             </Row>
             <Row>

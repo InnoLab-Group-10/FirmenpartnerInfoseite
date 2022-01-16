@@ -41,6 +41,13 @@ h1, h2, h3 {
     margin-bottom: 1rem;
 }
 
+#bootstrap-override input:focus,
+#bootstrap-override textarea:focus{
+    border-color: rgb(133,133,133);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.075) inset, 0 0 5px rgb(133,133,133);
+    outline: 0 none;
+}
+
 input[type=text], input[type=email]{
     height: 48px;
     border-radius: 24px;
@@ -89,8 +96,26 @@ header{
     padding-right: 0;
 }
 
+.sm-icons svg{
+    vertical-align: top;
+    margin-top: .2rem;
+}
+
+.sm-icons svg:hover{
+    margin-top: 0.1rem;
+    height: 20px;
+    width: 20px;
+}
+
+.sm-icons .btn:focus{
+    border-color: #fff;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.075) inset, 0 0 5px #fff;
+    outline: 0 none;
+}
+
 .top-bar-mail{
     padding-left: 1.2rem;
+    width: auto;
 }
 
 .top-bar-mail a{
@@ -112,6 +137,7 @@ header{
 
 .site-logo{
     margin-left: 1.2rem;
+
 }
 
 .site-logo span{
@@ -120,7 +146,7 @@ header{
 
 .menu-button{
     border-style: none;
-    margin-right: 0.6rem;
+    margin-right: 1.2rem;
     width: 48px;
     padding-left: 0.6rem;
 }
@@ -128,6 +154,22 @@ header{
 #navbarScroll{
     background-color: #fff;
     padding-left: 1.2rem;
+}
+
+@media(max-width: 425px){
+    .nav-top-bar .sm-icons{
+        float:none;
+    }
+
+    .top-bar-mail{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+    }
+
+    .sm-icons .col{
+        padding-left: 1rem;
+    }
 }
 
 /* === SLIDER === */
@@ -143,6 +185,8 @@ header{
 
 #slider img{
     object-fit: cover;
+    height: 1080px;
+    
 }
 
 .main-slide-text{
@@ -167,13 +211,50 @@ header{
     background-color: #fff;
 }
 
+.accordion-menu .card{
+    margin-bottom: 2rem;
+}
+
 .accordion-menu{
-    margin-top: 2rem;;
+    margin-top: 2rem;
     text-align: center;
 }
 
 .accordion-menu .btn{
     width: 100%;
+    background-color: #e9ecef;
+}
+
+.accordion-menu ul{
+    margin-bottom: 2rem;
+}
+
+.accordion-menu li{
+    margin-bottom: 1rem;
+}
+
+.dual-infos{
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+}
+
+/* === INFORMATION === */
+#info{
+    text-align: left;
+}
+
+#info ul{
+    text-align: left;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media(max-width: 768px){
+    #info{
+        text-align: center;
+    }
 }
 
 /* === TESTIMONIALS === */
@@ -200,7 +281,11 @@ header{
 #bootstrap-override #partner img{
     margin-left: auto;
     margin-right: auto;
-    border-radius: 50%;
+    filter: grayscale(100%);
+}
+
+#bootstrap-override #partner img:hover{
+    filter: none;
 }
 
 #partner .row{
@@ -211,10 +296,29 @@ header{
     text-align: center;
 }
 
-/* === CONTANT === */
+.partner-button{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.partner-row-small{
+    display: flex;
+}
+
+@media(max-width: 425px){
+    .partner-button{
+        width: 90%;
+    }
+
+    .partner-row-small{
+        display: none;
+    }
+}
+
+/* === CONTACT === */
 .contact-information .row{
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .contact-information svg{
@@ -222,6 +326,27 @@ header{
     height: 32px;
 }
 
+.contact-button{
+    background-color: #8bb31d;
+    border-color: #8bb31d;
+    margin-bottom: 2rem;
+}
+
+.contact-button:hover{
+    background-color: #00649c;
+    border-color: #00649c;
+}
+
+.contact-box{
+    text-align: left;
+}
+
+@media(max-width: 1024px){
+    .contact-box{
+        text-align: center;
+    }
+
+}
 
 /* === FOOTER === */
 .footer{
@@ -241,15 +366,23 @@ header{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    width: 400px;
+    max-width: 400px;
 }
 
 .footer .sm-icons .col{
     padding-left: 0;
 }
 
-.sm-icons{
-    padding-top: 3rem;
+.footer-column{
+    margin-bottom: 2rem;
+}
+
+#bootstrap-override .sm-icons .btn{
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    height: 24px;
+    width: 24px;
 }
 
 .bottom-bar{
@@ -269,5 +402,60 @@ header{
 
 .footer .btn{
     height: auto;
-    min-height: 48px;
+    min-height: 36px;
+    min-width: 36px;
+}
+
+.newsletter-button{
+    background-color: #8bb31d;
+    border-color: #8bb31d;
+    margin-bottom: 4rem;
+}
+
+.newsletter-button:hover{
+    background-color: #00649c;
+    border-color: #00649c;
+}
+
+.footer-links{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links a{
+    color: #f8f9fa;
+    padding: 0;
+}
+
+.footer-links a:hover{
+    opacity: 0.4;
+    color: #f8f9fa;
+}
+
+.footer-links a:active,
+.footer-links a:focus{
+    opacity: 0.4;
+    color: #f8f9fa;
+}
+
+@media(max-width: 992px){
+    .footer{
+        text-align: center;
+    }
+
+    .footer img{
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media(max-width: 425px){
+    .footer img{
+        width: 80%;
+    }
+
+    .bottom-bar{
+        margin-top: -13rem;
+    }
 }

@@ -8,11 +8,11 @@ const TopbarMenu = () => {
 	return <div className="nav-top-bar">
         <Container>
             <Row>
-                <Col xs={5} className="top-bar-mail">
+                <Col sm={5} className="top-bar-mail">
                     <MailIcon></MailIcon>
-                    <a href="mailto:name@example.com">name@example.com</a>
+                    <a href="mailto:helmut.gollner@technikum-wien.at">helmut.gollner@technikum-wien.at</a>
                 </Col>
-                <Col>
+                <Col sm>
                     <SocialMediaBar></SocialMediaBar>
                 </Col>
             </Row>
