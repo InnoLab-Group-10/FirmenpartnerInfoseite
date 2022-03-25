@@ -1,28 +1,50 @@
 import React from 'react';
-import {Form, Button} from 'react-bootstrap';
+import { Form, Button } from 'react-bootstrap';
 
 const ContactForm = () => {
-	return <div>
-            <Form>
-                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                    <Form.Control type="text" placeholder="Name" />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="exampleForm.ControlInput2">
-                    <Form.Control type="email" placeholder="name@example.com" />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="exampleForm.ControlInput3">
-                    <Form.Control type="text" placeholder="Betreff" />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                    <Form.Control as="textarea" rows={3} placeholder="Ihre Nachricht"/>
-                </Form.Group>
-                <div className="d-grid gap-2">
-                    <Button className="contact-button" variant="secondary" type="submit">
-                        Absenden
-                    </Button>                
-                </div>
-            </Form>
-    </div>;
+	return (
+		<div>
+			<Form>
+				<Form.Group
+					className='mb-3'
+					controlId='exampleForm.ControlInput1'
+				>
+					<Form.Control type='text' placeholder='Name' />
+				</Form.Group>
+				<Form.Group
+					className='mb-3'
+					controlId='exampleForm.ControlInput2'
+				>
+					<Form.Control type='email' placeholder='name@example.com' />
+				</Form.Group>
+				<Form.Group
+					className='mb-3'
+					controlId='exampleForm.ControlInput3'
+				>
+					<Form.Control type='text' placeholder='Betreff' />
+				</Form.Group>
+				<Form.Group
+					className='mb-3'
+					controlId='exampleForm.ControlTextarea1'
+				>
+					<Form.Control
+						as='textarea'
+						rows={3}
+						placeholder='Ihre Nachricht'
+					/>
+				</Form.Group>
+				<div className='d-grid gap-2'>
+					<Button
+						className='contact-button'
+						variant='secondary'
+						type='submit'
+					>
+						Absenden
+					</Button>
+				</div>
+			</Form>
+		</div>
+	);
 };
 
 export default ContactForm;
