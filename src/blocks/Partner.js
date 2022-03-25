@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Button, Nav } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
 
+// TODO maybe better solution
 function importAll(r) {
 	return r.keys().map(r);
 }

@@ -10,23 +10,20 @@ import {
 import { useAccordionButton } from 'react-bootstrap/AccordionButton';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 
-function CustomToggle({ children, eventKey }) {
-	const decoratedOnClick = useAccordionButton(eventKey, () =>
-		console.log('totally custom!')
-	);
-
-	return (
-		<Button
-			className='btn btn-light'
-			type='button'
-			onClick={decoratedOnClick}
-		>
-			{children}
-		</Button>
-	);
-}
-
 const DualInfoAccordion = () => {
+	const CustomToggle = ({ children, eventKey }) => {
+		const decoratedOnClick = useAccordionButton(eventKey);
+		return (
+			<Button
+				className='btn btn-light'
+				type='button'
+				onClick={decoratedOnClick}
+			>
+				{children}
+			</Button>
+		);
+	};
+
 	return (
 		<Accordion className='accordion-menu' defaultActiveKey='0'>
 			<Card>
