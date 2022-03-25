@@ -46,6 +46,7 @@ const Information = () => {
 						</ul>
 					</Col>
 					<Col lg={6}>
+						{/* TODO maybe switch to another package, since this one doesn't seem to get fixed */}
 						<ReactPlayer
 							url='https://www.youtube.com/watch?v=UHtkg_b6tjs'
 							width='100%'
