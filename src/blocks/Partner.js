@@ -12,6 +12,8 @@ const images = importAll(
 );
 
 const Partner = () => {
+	images.sort(() => Math.random() - 0.5);
+
 	return (
 		<div>
 			<Container>
